@@ -27,3 +27,18 @@ a { color: #e2bd7b; }
 }
 .production-notes section { display: block; max-width: 65ch; }
 @media (max-width: 40rem) { .production-notes { grid-template-columns: 1fr; } }
+
+.media-stats {
+  display: block;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #3d4a51;
+}
+.media-stats ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1.5rem;
+  padding-left: 0;
+  list-style: none;
+}
+.media-stats strong { color: #e2bd7b; }
