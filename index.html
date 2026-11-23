@@ -93,6 +93,29 @@
         <p><a href="#it-bit-me">Watch It bit me</a></p>
       </section>
     </div>
+    <section class="production-tools" id="production-tools" aria-labelledby="production-tools-title">
+      <h2 id="production-tools-title">Tools used to make the films</h2>
+      <dl>
+        <dt>Qwen-Image 2.1</dt>
+        <dd>We generated character and location references and illustrated shot keyframes. Targeted image edits let us widen Oskar’s singing shot so his knee dance was visible.</dd>
+        <dt>ComfyUI, Python, and Vast.ai</dt>
+        <dd>We ran ComfyUI workflows on rented Vast.ai GPUs. Our Python runner kept the workflow, seed, and inputs with each take so we could compare renders and recover interrupted downloads.</dd>
+        <dt>Wan 2.2 image-to-video and lip-sync</dt>
+        <dd>We animated illustrated stills and used first and last frames to direct shots such as Vesper’s light sweep. Wan 2.2 S2V drove mouth motion from dialogue in <cite>Moss</cite> and isolated singing in <cite>Wire Flowers</cite>.</dd>
+        <dt>Blender and Wan 2.1 VACE</dt>
+        <dd>We animated the flower bite with simple stand-ins in headless Blender. Wan used depth to follow the closing flower and outlines to guide Wren’s hand while preserving its drawn shape. <a href="#making-it-bit-me">See how we made the flower snap.</a></dd>
+        <dt>ElevenLabs, IndexTTS2, and Chatterbox</dt>
+        <dd>ElevenLabs supplied Candid dialogue, the <cite>Wire Flowers</cite> song, and effects such as the flower snap. We used IndexTTS2 and Chatterbox for the dialogue in <cite>Moss</cite>, choosing performances line by line.</dd>
+        <dt>Demucs and Rubber Band</dt>
+        <dd>Demucs split vocals from the backing. We aligned the timing of three separately sung chorus takes, used Rubber Band to stretch phrases while preserving pitch, then mixed the voices together. <a href="#making-wire-flowers">See how we made the song.</a></dd>
+        <dt>ACE-Step and Stable Audio</dt>
+        <dd>We used ACE-Step for musical cues and Stable Audio models for ambience and effects, including the canyon atmosphere and mechanical sounds in <cite>Moss</cite>.</dd>
+        <dt>FFmpeg, ffprobe, OpenCV, and NumPy</dt>
+        <dd>We used FFmpeg and ffprobe to cut, mix, and check the films. With OpenCV and NumPy, we patched resting mouths and Vesper’s forearm frame by frame and timed his amber eye pulse to the drumbeat.</dd>
+        <dt>DVC and Amazon S3</dt>
+        <dd>We versioned the source media and motion guides with DVC and stored them in S3 so the production workspace could be restored from the project repository.</dd>
+      </dl>
+    </section>
   </main>
 </body>
 </html>
