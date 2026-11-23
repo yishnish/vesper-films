@@ -55,6 +55,20 @@
           </video>
         </article>
     </section>
+    <div class="production-notes">
+      <section id="making-wire-flowers" aria-labelledby="making-wire-flowers-title">
+        <h2 id="making-wire-flowers-title">Making the <cite>Wire Flowers</cite> song</h2>
+        <p>We used one ElevenLabs Music composition at 112 BPM to generate the song. Oskar, Wren, and Vesper each had a solo to establish their voice, then each sang the same chorus in a separate section.</p>
+        <p>We separated the vocals from the backing with Demucs and cut the three chorus takes at the bar lines. Our alignment script matched the timing of each phrase to the steadiest take, stretching phrases without changing their pitch. We panned the three voices slightly apart, added a touch of echo, and layered them over a single backing track.</p>
+        <p><a href="#wire-flowers">Watch Wire Flowers</a></p>
+      </section>
+      <section id="making-it-bit-me" aria-labelledby="making-it-bit-me-title">
+        <h2 id="making-it-bit-me-title">Making the flower snap in <cite>It bit me</cite></h2>
+        <p>We ran Blender from the command line to animate simple 3D stand-ins for Wren’s hand and the flower. We matched their starting positions to the illustrated keyframe and animated the flower closing over her fingertip like a hinged lid. Moving the hinge forward let the lid hide the fingertip without passing through it.</p>
+        <p>Blender rendered the motion frame by frame. We combined depth on the flower’s moving fan with outlines for the hand and stem. The depth guided the flower’s change in shape, while the outlines guided the hand without imposing the stand-in’s shape. We fed the combined guide and illustrated keyframe into Wan 2.1 VACE to render the shot.</p>
+        <p><a href="#it-bit-me">Watch It bit me</a></p>
+      </section>
+    </div>
   </main>
 </body>
 </html>

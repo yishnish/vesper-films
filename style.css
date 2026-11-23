@@ -16,3 +16,14 @@ h2 { margin: .55rem 0 0; font-size: 1.12rem; font-weight: 550; }
 video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #0a1014; border: 1px solid #3d4a51; }
 a { color: #e2bd7b; }
 @media (max-width: 40rem) { section { grid-template-columns: 1fr; } }
+
+.production-notes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem 1.5rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #3d4a51;
+}
+.production-notes section { display: block; max-width: 65ch; }
+@media (max-width: 40rem) { .production-notes { grid-template-columns: 1fr; } }
