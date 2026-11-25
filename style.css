@@ -52,3 +52,13 @@ a { color: #e2bd7b; }
 .production-tools dl { max-width: 72ch; }
 .production-tools dt { margin-top: 1rem; font-weight: 650; }
 .production-tools dd { margin: .25rem 0 0; }
+
+.motion-test {
+  display: block;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #3d4a51;
+}
+.motion-test h2 { margin: 0 0 .75rem; }
+.motion-test video { aspect-ratio: 1410 / 704; }
+.motion-test p { max-width: 72ch; }
